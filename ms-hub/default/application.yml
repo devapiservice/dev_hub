@@ -6,7 +6,7 @@ spring:
     username: hub-desa
     password: Apimono123
   jpa:
-    dhibernate:
+    hibernate:
       ddl-auto: none
     show-sql: false
     database: postgresql
