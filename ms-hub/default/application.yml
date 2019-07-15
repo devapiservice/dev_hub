@@ -33,7 +33,7 @@ config:
   # environment: produc
   queue:
     exchange: exchange
-    queue: queue-planes-pago
+    queue: config.queue.queue-consulta-planespago-sifco-endpoint
     routingkey: routingkey
     
     
