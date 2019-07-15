@@ -2,9 +2,9 @@ spring:
   datasource:
     platform: postgresql
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://10.40.4.79:5432/hub-QA
-    username: hub
-    password: YUHeHMHdcj
+    url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
+    username: hub-desa
+    password: Apimono123
   jpa:
     database: POSTGRESQL
     show-sql: true
