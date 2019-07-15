@@ -6,19 +6,19 @@ spring:
     username: hub-desa
     password: Apimono123
   jpa:
-    database: POSTGRESQL
-    show-sql: true
-    generate-ddl: true
-    hibernate:
+    dhibernate:
       ddl-auto: none
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
     properties:
       hibernate:
         default_schema: hub
-#        temp:
-#          use_jdbc_metadata_defaults: false 
   data:
     mongodb:
-      host: 10.40.4.98
+      host: localhost
       port: 27017
       database: hub
   rabbitmq:
