@@ -6,16 +6,16 @@ spring:
     username: hub-desa
     password: Apimono123
   jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
     hibernate:
       ddl-auto: none
-    show-sql: false
-    database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    open-in-view: false
-    generate-ddl: false
     properties:
       hibernate:
         default_schema: hub
+#        temp:
+#          use_jdbc_metadata_defaults: false 
   data:
     mongodb:
       host: localhost
@@ -35,6 +35,7 @@ config:
     exchange: exchange
     queue: queue-planes-pago
     routingkey: routingkey
+    
     
 security:
   sessions: stateless
