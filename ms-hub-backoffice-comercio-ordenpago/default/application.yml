@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
-    username: hub-desa
+    username: hub
     password: Apimono123
   jpa:
     hibernate:
@@ -15,6 +15,7 @@ spring:
     properties:
       hibernate:
         default_schema: hub
+        enable_lazy_load_no_trans: true
   data:
     mongodb:
       host: localhost
